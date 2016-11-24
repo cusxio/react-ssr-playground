@@ -2,7 +2,7 @@
 
 > React Server Side Playground
 
-A repository to document the basic building blocks of a universal, aka server side rendered React application.
+A repository that documents the basic building blocks of a universal, aka server side rendered React application.
 
 ## Features
 
@@ -35,3 +35,7 @@ $ npm run build
 # Build Production + Start Server
 $ npm run start:prod
 ```
+
+## License
+
+MIT © Jonathan Chan
