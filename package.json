@@ -1,0 +1,58 @@
+{
+  "name": "react-ssr-playground",
+  "version": "1.0.0",
+  "description": "A react server side rendering playground",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server server-hmr & nodemon -i server/assets server server",
+    "build": "NODE_ENV=production node build",
+    "start:prod": "npm run build && node .dist"
+  },
+  "devDependencies": {
+    "assets-webpack-plugin": "^3.5.0",
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-object-rest-spread": "^6.19.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "del": "^2.2.2",
+    "eslint": "^3.10.2",
+    "eslint-config-cusxio": "^0.4.1",
+    "eslint-config-cusxio-react": "0.0.10",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.7.1",
+    "json-loader": "^0.5.4",
+    "nodemon": "^1.11.0",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "webpack": "^2.1.0-beta.27",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.13.2",
+    "webpack-node-externals": "^1.5.4"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.18.0",
+    "glamor": "^2.19.0",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^3.2.0",
+    "koa-compress": "^2.0.0",
+    "koa-logger": "^2.0.0",
+    "koa-response-time": "^2.0.0",
+    "koa-router": "^7.0.1",
+    "koa-static": "^3.0.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-helmet": "^3.2.2",
+    "react-router": "^4.0.0-alpha.6"
+  },
+  "eslintConfig": {
+    "extends": [
+      "cusxio",
+      "cusxio/browser",
+      "cusxio-react"
+    ]
+  }
+}
