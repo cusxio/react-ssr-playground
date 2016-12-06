@@ -9,7 +9,6 @@ const PORT = 3030;
 
 const compiler = createCompiler({ hotReload: true });
 app.use(devMiddleware(compiler, {
-    hot: true,
     noInfo: true,
     publicPath: '/',
     // https://github.com/webpack/webpack/blob/v2.1.0-beta.27/lib/Stats.js#L738-L778
