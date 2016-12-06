@@ -67,6 +67,7 @@ export default function createCompiler({ hotReload = true }) {
                 presets: ['react', ['es2015', { loose: false, modules: false }]],
                 plugins: purge([
                     dev ? 'react-hot-loader/babel' : null,
+                    dev ? 'glamor/babel' : null,
                     'transform-runtime',
                     'transform-async-to-generator',
                     'transform-object-rest-spread',

@@ -1,9 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { container } from './styles';
+import styles from './styles';
 
 const Home = () => (
-    <div {...container}>
+    <div {...styles}>
         <Helmet
             title="Home"
         />

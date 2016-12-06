@@ -1,9 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { container } from './styles';
+import styles from './styles';
 
 const About = () => (
-    <div {...container}>
+    <div {...styles}>
         <Helmet
             title="About"
         />
